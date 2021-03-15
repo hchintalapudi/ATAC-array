@@ -3,6 +3,7 @@
 #author: "Himanshu Chintalapudi"
 #date: "3/1/2020"
 library("magicfor")
+library("ggplot2")
 library("reshape")
 library("tidyverse")
 library("Rmpfr")
