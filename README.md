@@ -1,2 +1,2 @@
-# ATAC-array
-All samples processed through this pipeline (src/ATACanalysis/ATACanalysis.java) and then further processed through downstream analysis R scripts for visualization.
+# ATAC-array analysis:
+This pipeline (src/ATACanalysis/ATACanalysis.java) produces a file "ATACregionLRs.txt" which can be further processed through downstream analysis R scripts for visualization.
