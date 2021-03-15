@@ -25,6 +25,7 @@ colNames <- names(ATAC_LRs)[6:ncol(ATAC_LRs)]
 #map colnames to mlogp values:
 names(sig) = colNames
 
+## Generate and save plots for all samples through iteration:
 for(i in colNames){
   plt <- ggplot(ATAC_LRs, aes_string(x = i,"type"), mapping = aes_string(x = i, color = "type")) +
     labs(x = "Normalized intensities", y = "Density", title = paste0(gsub(".L2R","",i))) +
