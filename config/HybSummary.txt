@@ -1,0 +1,9 @@
+Array	Sample	True class (not really)	Call class	mLogP	notes
+S10025_1_1	PT46				from Dhara6
+S10025_1_2	PT47				from Dhara6
+S10025_1_3	PT49				from Dhara6
+S10025_1_4	PT50				from Dhara6
+S10025_2_1	PT51				from Dhara6
+S10025_2_2	PT52				from Dhara6
+S10025_2_3	PT53				from Dhara6
+S10025_2_4	PT55				from Dhara6
