@@ -12,9 +12,10 @@ library("readxl")
 library("writexl")
 library("survival")
 library("survminer")
-
+### Read the main LR file produced by the ATACarray pipeline
 ATAC_LRs<- read.table("/Users/hchintalapudi/Desktop/ATAC-array/MSK training set/ATACregionLRs_master_edited.txt", header = T, sep = " ")
 ATAC_LRs$type <- factor(ATAC_LRs$type, levels = c("CGH", "ctrl", "blue", "red"))
+## Read the supplementary Sample clsiification file, also produced by the pipeline 
 SampleClassification<- read.table("/Users/hchintalapudi/Desktop/ATAC-array/MSK training set/SampleClassification_MSK_edited.txt", header = T, sep = ",")
 
 SampleClassification$pvalue<- 10^(-SampleClassification$mlogp)
