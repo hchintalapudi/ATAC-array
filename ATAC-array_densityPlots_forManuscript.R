@@ -39,3 +39,20 @@ for(i in colNames){
   ggsave(plt, file = paste0("plot_", i,".pdf"), width = 14, height = 8.5, dpi = 300)
   Sys.sleep(2)
 }
+
+
+## For Individual Sample plots like in Fig.4b (i and ii):
+g<-ggplot(ATAC_LRs, aes_string(x = ATAC_LRs$PT60.L2R,"type"), mapping = aes_string(x = ATAC_LRs$PT60.L2R, color = "type")) +
+    labs(x = "Normalized intensities", y = "Density", title = "PT60") +
+    scale_color_manual(labels = c( "CGH (Negative control)", "Ctrl (Positive control)","Blue","Red"), values = c("black","green", "blue", "red")) +
+    theme_bw() + 
+    geom_line(stat = "density",size = 1.8, linejoin = 'bevel', position = "identity", lineend = "round") + theme(axis.text=element_text(size=25),axis.title=element_text(size=25),legend.text=element_text(size=25),plot.title = element_text(size = 25), legend.title = element_blank())
+  #geom_vline(data = med, aes(xintercept= med), linetype = "dashed", size =1) +
+g +geom_segment(x= 0, y=0, xend = 0, yend=0.52, linetype = "dotted")+
+   geom_segment(x=0.53, y=0, xend= 0.53, yend=0.51, linetype = "dotted", color = "blue") +
+   geom_segment(x=1.8, y=0, xend= 1.8, yend=0.515, linetype = "dotted", color = "red") + 
+   geom_segment(x=2, y=0, xend= 2, yend=0.74, linetype = "dotted", color = "green") +
+  annotate("text", x = -0.13, y= 0.3, label = "CGH", angle = 90, size = 7)+
+  annotate("text", x = 0.41, y= 0.3, label = "BLUE", angle = 90, size = 7, color = "blue")+
+  annotate("text", x = 1.68, y= 0.3, label = "RED", angle = 90, size = 7, color = "red")+
+  annotate("text", x = 1.88, y= 0.39, label = "CTRL", angle = 90, size = 7, color = "green")
