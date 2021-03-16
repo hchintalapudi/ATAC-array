@@ -6,4 +6,4 @@ It produces a file *"ATACregionLRs.txt"* which can be further processed through 
 JAVA - version 1.8
 
 **Usage:**<br/>
-java ATACanalysis.ATACanalysis ATACanalysis/config/ Ag_FE_data/* 
+java  ATACanalysis.ATACanalysis  ATACanalysis/config/  Ag_FE_data/* 
