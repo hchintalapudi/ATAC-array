@@ -1,8 +1,9 @@
 # Analysis of Surajit Dhara's paper (Pancreatic cancer prognosis is predicted by a novel ATAC-array technology for assessing chromatin accessibility):
-This repository has the analysis scripts for ATACseq and ATACarray analysis of the research project published and linked [here](https://www.biorxiv.org/content/10.1101/2021.01.21.427604v1) 
+This repository contains the analysis scripts for ATAC-seq and ATAC-array analysis of the research project published and linked [here](https://www.biorxiv.org/content/10.1101/2021.01.21.427604v1) 
 
 # ATAC-seq analysis:
-ATAC-seq analysis pipeline and processing scripts authored by Sagar Chhangawala (sagar.cornell@gmail.com)
+ATAC-seq analysis pipeline and processing scripts authored by Sagar Chhangawala (sagar.cornell@gmail.com)<br/>
+As_Atlas_creation.R is the script used to generate the global atlas of reproducible chromatin peaks mentioned in the paper.
 
 
 
